@@ -1,9 +1,5 @@
+package nataliakrzciuk.domain;
 
-
-import nataliakrzciuk.domain.Dish;
-import nataliakrzciuk.domain.Meal;
-import nataliakrzciuk.domain.Person;
-import nataliakrzciuk.domain.Product;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -63,6 +59,7 @@ public class PersonTest {
 
     @Test
     public void calculateBMR() {
-        assertEquals(1145.57, person.calculateBMR(),0);
+        assertEquals(1311.57, person.calculateBMR(),0);
     }
+
 }
