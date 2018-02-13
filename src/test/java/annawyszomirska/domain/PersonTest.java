@@ -1,7 +1,11 @@
-package pl.b2bnetwork.domain;
+package annawyszomirska.domain;
 
 import org.junit.Before;
 import org.junit.Test;
+import annawyszomirska.domain.Dish;
+import annawyszomirska.domain.Meal;
+import annawyszomirska.domain.Person;
+import annawyszomirska.domain.Product;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -59,6 +63,6 @@ public class PersonTest {
 
     @Test
     public void calculateBMR() {
-        assertEquals(1145.57, person.calculateBMR(),0);
+        assertEquals(1311.57, person.calculateBMR(),0);
     }
 }

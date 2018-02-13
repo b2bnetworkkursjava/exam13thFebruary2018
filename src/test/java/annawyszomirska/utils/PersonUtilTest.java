@@ -1,17 +1,18 @@
-package pl.b2bnetwork.utils;
+package annawyszomirska.utils;
 
-import org.junit.Before;
 import org.junit.Test;
-import pl.b2bnetwork.domain.Dish;
-import pl.b2bnetwork.domain.Meal;
-import pl.b2bnetwork.domain.Person;
-import pl.b2bnetwork.domain.Product;
+import annawyszomirska.domain.Dish;
+import annawyszomirska.domain.Meal;
+import annawyszomirska.domain.Person;
+import annawyszomirska.domain.Product;
+import annawyszomirska.utils.PersonUtil;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import static org.hamcrest.Matchers.containsInAnyOrder;
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertThat;
+import static org.junit.Assert.assertTrue;
 
 public class PersonUtilTest {
     private List<Person> persons = new ArrayList<>();
