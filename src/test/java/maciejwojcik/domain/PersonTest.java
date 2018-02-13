@@ -1,8 +1,8 @@
-/*
-package pl.b2bnetwork.domain;
+package maciejwojcik.domain;
 
 import org.junit.Before;
 import org.junit.Test;
+
 
 import java.util.ArrayList;
 import java.util.List;
@@ -62,4 +62,4 @@ public class PersonTest {
     public void calculateBMR() {
         assertEquals(1145.57, person.calculateBMR(),0);
     }
-}*/
+}
