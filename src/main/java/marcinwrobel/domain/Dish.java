@@ -9,10 +9,19 @@ danie przygotowuje się ze składników (produktów); np, sałatka pomidorowa za
  */
 public class Dish {
 
-    private String nazwa;
+    private String name;
     private List<Product> products = new ArrayList<Product>();
 
     public Dish(String name, List<Product> products) {
+        this.name = name;
+        this.products = products;
+    }
 
+    public String getName() {
+        return name;
+    }
+
+    public List<Product> getProducts() {
+        return products;
     }
 }

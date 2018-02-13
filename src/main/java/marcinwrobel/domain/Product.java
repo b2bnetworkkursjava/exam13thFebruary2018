@@ -10,10 +10,26 @@ package marcinwrobel.domain;
  *
  */
 public class Product {
+
     private String name;
     private int kcal;
     private double price;
 
     public Product(String name, int kcal, double price) {
+        this.name = name;
+        this.kcal = kcal;
+        this.price = price;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public int getKcal() {
+        return kcal;
+    }
+
+    public double getPrice() {
+        return price;
     }
 }
