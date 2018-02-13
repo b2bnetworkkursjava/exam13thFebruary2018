@@ -59,6 +59,6 @@ public class PersonTest {
 
     @Test
     public void calculateBMR() {
-        assertEquals(1145.57, person.calculateBMR(),0);
+        assertEquals(1311.57, person.calculateBMR(),0);
     }
 }

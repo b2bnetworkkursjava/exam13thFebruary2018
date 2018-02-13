@@ -105,9 +105,9 @@ BMR = (9,99 x waga (kg)) + (6,25 x wzrost (cm)) – (4,92 x wiek) + 5
         double bmr = 0;
 
         if (isWomen) {
-            bmr = (9.99 * getWeight()) + (6.25 * getHeight()) - 4.92 * (2018 - getYearOfBirth()) - 161;
+            bmr = (9.99 * getWeight()) + (6.25 * getHeight()) - (4.92 * (2018 - getYearOfBirth())) - 161;
         } else {
-            bmr = (9.99 * getWeight()) + (6.25 * getWeight()) - 4.92 * (2018 - getYearOfBirth()) + 5;
+            bmr = (9.99 * getWeight()) + (6.25 * getHeight()) - (4.92 * (2018 - getYearOfBirth())) + 5;
         }
 
         return bmr;
