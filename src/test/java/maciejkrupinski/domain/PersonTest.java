@@ -1,4 +1,4 @@
-/*package pl.b2bnetwork.domain;
+package maciejkrupinski.domain;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -59,6 +59,6 @@ public class PersonTest {
 
     @Test
     public void calculateBMR() {
-        assertEquals(1145.57, person.calculateBMR(),0);
+        assertEquals(1311.57, person.calculateBMR(),0);
     }
-}*/
+}
