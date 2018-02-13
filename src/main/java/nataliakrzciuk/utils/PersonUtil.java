@@ -52,6 +52,7 @@ public class PersonUtil {
                         kcal+=pro.getKcal();
                     }
                 }
+
             }
             if (countDinner==2&&kcal<p.calculateBMR()){
                 tmp.add(p.getSurname());
