@@ -1,11 +1,10 @@
-package pl.b2bnetwork.utils;
+package kubaczajkowski.utils;
 
-import org.junit.Before;
+import kubaczajkowski.domain.Dish;
+import kubaczajkowski.domain.Meal;
+import kubaczajkowski.domain.Person;
+import kubaczajkowski.domain.Product;
 import org.junit.Test;
-import pl.b2bnetwork.domain.Dish;
-import pl.b2bnetwork.domain.Meal;
-import pl.b2bnetwork.domain.Person;
-import pl.b2bnetwork.domain.Product;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -14,8 +13,9 @@ import static org.hamcrest.Matchers.containsInAnyOrder;
 import static org.junit.Assert.*;
 
 public class PersonUtilTest {
+
     private List<Person> persons = new ArrayList<>();
-    private PersonUtil  util = new PersonUtil();
+    private PersonUtil util = new PersonUtil();
 
     private void createPersonWithCorrectAnswer() {
         List<Meal> meals = new ArrayList<>();
