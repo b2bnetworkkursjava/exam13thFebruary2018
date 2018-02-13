@@ -1,4 +1,4 @@
-package pl.b2bnetwork.domain;
+package michalzelichowski.domain;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -19,7 +19,7 @@ public class PersonTest {
         products.add(new Product("mleko", 200, 12));
         dishes.add(new Dish("kakao", products));
         meals.add(new Meal("dinner", dishes));
-        person = new Person("Jan", "Kowalski", meals, false, 124, 67, 1990);
+        person = new Person("Jan", "Kowalski", meals, 67, 124, false, 1990);
     }
 
     @Test

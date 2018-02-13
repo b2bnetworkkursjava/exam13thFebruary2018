@@ -1,11 +1,10 @@
-package pl.b2bnetwork.utils;
+package michalzelichowski.utils;
 
-import org.junit.Before;
+import michalzelichowski.domain.Dish;
+import michalzelichowski.domain.Meal;
+import michalzelichowski.domain.Person;
+import michalzelichowski.domain.Product;
 import org.junit.Test;
-import pl.b2bnetwork.domain.Dish;
-import pl.b2bnetwork.domain.Meal;
-import pl.b2bnetwork.domain.Person;
-import pl.b2bnetwork.domain.Product;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -24,7 +23,7 @@ public class PersonUtilTest {
         products.add(new Product("mleko", 200, 12));
         dishes.add(new Dish("kakao", products));
         meals.add(new Meal("dinner", dishes));
-        Person kowalska = new Person("Maria", "Kowalska", meals, true, 124, 67, 1990);
+        Person kowalska = new Person("Maria", "Kowalska", meals, 67, 124, true, 1990);
         List<Meal> mealsDagmara = new ArrayList<>();
         List<Dish> dishesDagmara = new ArrayList<>();
         List<Product> productsDagmara = new ArrayList<>();
@@ -32,7 +31,7 @@ public class PersonUtilTest {
         productsDagmara.add(new Product("mleko", 1800, 12));
         dishesDagmara.add(new Dish("kakao", productsDagmara));
         mealsDagmara.add(new Meal("dinner", dishesDagmara));
-        Person dagmara = new Person("Dagmara", "Zielińska", mealsDagmara, true, 164, 57, 1990);
+        Person dagmara = new Person("Dagmara", "Zielińska", mealsDagmara, 57, 164, true, 1990);
         List<Meal> mealsNowak = new ArrayList<>();
         List<Dish> dishesNowak = new ArrayList<>();
         List<Product> productsSalatka = new ArrayList<>();
@@ -47,7 +46,7 @@ public class PersonUtilTest {
         dishesNowak.add(new Dish("kompot", productsKompot));
         mealsNowak.add(new Meal("dinner", dishesNowak));
         mealsNowak.add(new Meal("dinner", dishesNowak));
-        Person nowak = new Person("Jan", "Nowak", mealsNowak, false, 167, 67, 1992);
+        Person nowak = new Person("Jan", "Nowak", mealsNowak, 67, 167, false, 1992);
 
         persons.add(kowalska);
         persons.add(nowak);
@@ -60,14 +59,14 @@ public class PersonUtilTest {
         products.add(new Product("mleko", 200, 12));
         dishes.add(new Dish("kakao", products));
         meals.add(new Meal("dinner", dishes));
-        Person kowalska = new Person("Maria", "Kowalska", meals, true, 124, 67, 1990);
+        Person kowalska = new Person("Maria", "Kowalska", meals, 67, 124, true, 1990);
         List<Meal> mealsDagmara = new ArrayList<>();
         List<Dish> dishesDagmara = new ArrayList<>();
         List<Product> productsDagmara = new ArrayList<>();
         productsDagmara.add(new Product("ziemniak", 1100, 2));
         dishesDagmara.add(new Dish("kakao", productsDagmara));
         mealsDagmara.add(new Meal("dinner", dishesDagmara));
-        Person dagmara = new Person("Dagmara", "Zielińska", mealsDagmara, true, 164, 57, 1960);
+        Person dagmara = new Person("Dagmara", "Zielińska", mealsDagmara, 57, 164, true, 1960);
         List<Meal> mealsNowak = new ArrayList<>();
         List<Dish> dishesNowak = new ArrayList<>();
         List<Product> productsSalatka = new ArrayList<>();
@@ -81,7 +80,7 @@ public class PersonUtilTest {
         dishesNowak.add(new Dish("głowne danie", productsGlownyObiad));
         dishesNowak.add(new Dish("kompot", productsKompot));
         mealsNowak.add(new Meal("dinner", dishesNowak));
-        Person nowak = new Person("Jan", "Nowak", mealsNowak, false, 167, 67, 1992);
+        Person nowak = new Person("Jan", "Nowak", mealsNowak, 67, 167, false, 1992);
 
         persons.add(kowalska);
         persons.add(nowak);
