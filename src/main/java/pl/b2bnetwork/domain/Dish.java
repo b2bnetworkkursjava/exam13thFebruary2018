@@ -12,4 +12,24 @@ public class Dish {
     private String nazwa;
     private List<Product> products = new ArrayList<Product>();
 
+    public Dish(String nazwa, List<Product> products) {
+        this.nazwa = nazwa;
+        this.products = products;
+    }
+
+    public String getNazwa() {
+        return nazwa;
+    }
+
+    public void setNazwa(String nazwa) {
+        this.nazwa = nazwa;
+    }
+
+    public List<Product> getProducts() {
+        return products;
+    }
+
+    public void setProducts(List<Product> products) {
+        this.products = products;
+    }
 }
