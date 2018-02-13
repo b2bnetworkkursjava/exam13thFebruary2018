@@ -1,5 +1,5 @@
-package pl.b2bnetwork.domain;
-/*
+package damianrafa.domain;
+
 import org.junit.Before;
 import org.junit.Test;
 
@@ -62,4 +62,3 @@ public class PersonTest {
         assertEquals(1145.57, person.calculateBMR(),0);
     }
 }
-*/

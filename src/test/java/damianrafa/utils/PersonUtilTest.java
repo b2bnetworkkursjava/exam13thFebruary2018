@@ -1,11 +1,10 @@
-package pl.b2bnetwork.utils;
-/*
-import org.junit.Before;
+package damianrafa.utils;
+
+import damianrafa.domain.Dish;
+import damianrafa.domain.Meal;
+import damianrafa.domain.Person;
+import damianrafa.domain.Product;
 import org.junit.Test;
-import pl.b2bnetwork.domain.Dish;
-import pl.b2bnetwork.domain.Meal;
-import pl.b2bnetwork.domain.Person;
-import pl.b2bnetwork.domain.Product;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -115,4 +114,3 @@ public class PersonUtilTest {
 
 
 }
-*/
