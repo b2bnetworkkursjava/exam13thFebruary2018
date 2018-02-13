@@ -1,4 +1,4 @@
-package pl.b2bnetwork.domain;
+package marcinwrobel.domain;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,4 +1,4 @@
-package pl.b2bnetwork.domain;
+package marcinwrobel.domain;
 
 /**
  * Opis produktu, z którego składa się dana potrawa
