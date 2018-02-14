@@ -1,7 +1,11 @@
 package pl.eninja.domain;
 
+import java.time.ZoneId;
+import java.time.ZonedDateTime;
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.List;
+
 
 /**
  * Opis osoby, na który składa się: imię i nazwisko, lista posiłków tej osoby
@@ -11,7 +15,7 @@ import java.util.List;
 
 public class Person {
 
-    private final int actualYear = 2018;
+    private int actualYear = ZonedDateTime.now(ZoneId.of("Europe/Warsaw")).getYear();
     private String name;
     private String surname;
     private List<Meal> meals = new ArrayList();
@@ -19,10 +23,6 @@ public class Person {
     private double height;
     private boolean isWomen;
     private int yearOfBirth;
-
-    public int getActualYear() {
-        return actualYear;
-    }
 
     public Person(String name, String surname, List<Meal> meals, boolean isWomen, double height, double weight, int yearOfBirth) {
         this.name = name;
@@ -32,6 +32,10 @@ public class Person {
         this.height = height;
         this.isWomen = isWomen;
         this.yearOfBirth = yearOfBirth;
+    }
+
+    public int getActualYear() {
+        return actualYear;
     }
 
     public String getName() {
@@ -104,11 +108,12 @@ BMR = (9,99 x waga (kg)) + (6,25 x wzrost (cm)) – (4,92 x wiek) + 5
         double bmr = 0;
 
         if (isWomen) {
-            bmr = (9.99 * getWeight()) + (6.25 * getHeight()) - 4.92 * (getActualYear() - getYearOfBirth()) - 161;
+            bmr = (9.99 * getWeight()) + (6.25 * getHeight()) - 4.92 * (2018 - getYearOfBirth()) - 161;
 
         } else {
-            bmr = (9.99 * getWeight()) + (6.25 * getHeight()) - 4.92 * (getActualYear() - getYearOfBirth()) + 5;
+            bmr = (9.99 * getWeight()) + (6.25 * getHeight()) - 4.92 * (2018 - getYearOfBirth()) + 5;
         }
+
 
         return bmr;
     }
